@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />    
+  </head>
+
+  <body>
+
+	<h1><%= title %></h1>
+
+	
+	<main>
+		<div id="showcase">
+			<img src="/images/fashion-standin.jpg">
+		</div>
+		<!-- products -->
+		<div id="products">		
+			<div class="grid-container">
+				<% for(var i = 0; i < 9; i++) {%>
+				<div class="grid-item product">
+					<img src="/images/fashion5.jpg">
+					<h2>Summer Dress</h2>
+					<p class="price">$19.99</p>
+					<p>
+						Elegant orange and yellow summer dress.
+						Sleeveless, slim, elegant, superb.
+					</p>
+					<button>Add to Cart</button>
+				</div>
+				<% } %>
+				
+			</div> 
+		</div> 		<!-- products -->
+
+	</main>
+  </body>
+</html>
