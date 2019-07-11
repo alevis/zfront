@@ -98,6 +98,25 @@ main{
 	width: 100%;
 }
 
+@media screen and (max-width: 400px){
+	.grid-container{
+		grid-template-columns: auto;
+		padding:0px;
+	}
+	.grid-item{
+		padding: 0px;
+	}
+	#products{
+		padding: 20px;
+	}
+	body{
+		padding: 5px;
+	}
+	h1{
+		padding: 10px;		
+	}
+}
+
 .product .price{
 	cursor: pointer;
 	color: burlywood;
