@@ -102,7 +102,7 @@ iphone 6/78 +
 iphone x/xs +
 galaxy s8/9/10
 */
-@media screen and (max-width: 420px){
+@media screen and (max-width: 600px){
 	.grid-container{
 		grid-template-columns: auto;
 		padding:0px;
@@ -121,7 +121,7 @@ galaxy s8/9/10
 	}
 }
 
-@media screen and (min-width:768px) and (max-width: 800px){
+@media screen and (min-width:601px) and (max-width: 900px){
 	.grid-container{
 		grid-template-columns: auto auto;
 		padding: 0px;		
