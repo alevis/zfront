@@ -5,7 +5,7 @@ body {
   padding:6%;
 	background: burlywood;
   background: -webkit-linear-gradient(to top, #19547b, navajowhite);  
-  background: linear-gradient(to top, gray, navajowhite);
+  background: linear-gradient(to top, #883080, navajowhite);
 }
 
 
@@ -40,30 +40,10 @@ main{
 	padding: 50px;	
 /*  	background-color:burlywood; 		 */
 	background: #ffd89b;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, gray, blanchedalmond);  
-	background: linear-gradient(to top, silver, blanchedalmond);
+	background: -webkit-linear-gradient(to top, white, blanchedalmond);  
+	background: linear-gradient(to top, pink, blanchedalmond);
 
 }
-
-@-webkit-keyframes Gradient {
-	0% { background-position: 0% 25% }
-	50% { background-position: 50% 25% }
-	100% { background-position: 0% 25% }
-}
-
-@-webkit-keyframes Gradient {
-	0% { background-position: 0% 25% }
-	50% { background-position: 50% 25% }
-	100% { background-position: 0% 25% }
-}
-
-@-webkit-keyframes Gradient {
-	0% { background-position: 0% 25% }
-	50% { background-position: 50% 25% }
-	100% { background-position: 0% 25% }
-}
-
-
 #showcase{
 	background-color: blanchedalmond;'	
 	width: 100%;
@@ -102,7 +82,7 @@ iphone 6/78 +
 iphone x/xs +
 galaxy s8/9/10
 */
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
 	.grid-container{
 		grid-template-columns: auto;
 		padding:0px;
@@ -121,7 +101,7 @@ galaxy s8/9/10
 	}
 }
 
-@media screen and (min-width:601px) and (max-width: 900px){
+@media only screen and (min-width:601px) and (max-width: 900px){
 	.grid-container{
 		grid-template-columns: auto auto;
 		padding: 0px;		
