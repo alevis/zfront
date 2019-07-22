@@ -1,15 +1,11 @@
  @import url('https://fonts.googleapis.com/css?family=Comfortaa|Lato|Roboto|Muli|Montserrat+Alternate&display=swap');
-
-body {		
-	font: 14px 'Montserrat Alternate', 'Muli', 'Roboto', 'Lato', sans-serif;  
-  padding:6%;
+body {
+	font: 14px 'Montserrat Alternate', 'Muli', 'Roboto', 'Lato', 'Arial', 'San Francisco', 'Avenir', sans-serif;  
+	padding:6%;
 	background: burlywood;
-  background: -webkit-linear-gradient(to top, #19547b, navajowhite);  
-  background: linear-gradient(to top, #883080, navajowhite);
+	background: -webkit-linear-gradient(to top, #19547b, navajowhite);  
+	background: linear-gradient(to top, #883080, navajowhite);
 }
-
-
-
 h1,h2{
 	text-align: center;
 	font-family:'Comfortaa', cursive;
@@ -32,30 +28,27 @@ main{
 	flex-direction: column;
 	align-content: center;
 }
-
 #products{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	padding: 50px;	
-/*  	background-color:burlywood; 		 */
+	/*  background-color:burlywood; */
 	background: #ffd89b;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to top, white, blanchedalmond);  
 	background: linear-gradient(to top, pink, blanchedalmond);
 
 }
 #showcase{
-	background-color: blanchedalmond;'	
+	background-color: blanchedalmond;
 	width: 100%;
 	padding: 20px;		
 }
-
 #showcase img{
 	cursor: pointer;	
 	vertical-align: top;		
 	width: 100%;	
 }
-
 .grid-container{
 	display:grid;
 	grid-gap: 50px;
@@ -63,7 +56,6 @@ main{
 	align-content: center;	
 	justify-content: center;	
 }
-
 .grid-item{		
 	font-family: 'Lato' sans-serif;
 	background-color: white;
@@ -71,7 +63,6 @@ main{
 	text-align: center;	
 	border-bottom: 5px solid black;	
 }
-
 .grid-item img{
 	cursor: pointer;
 	border-radius: 3px;	
@@ -82,18 +73,17 @@ iphone 6/78 +
 iphone x/xs +
 galaxy s8/9/10
 */
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
+	#products{	padding: 20px; }
 	#product .grid-container{
 		grid-template-columns: auto;
 		padding:0px;
 	}
-	.grid-item{ padding: 0px; }
-	#products{	padding: 20px; }
+	#product .grid-item{ padding: 0px; }
 	body{ padding: 5px; }
 	h1{ padding: 10px; }
 }
-
-@media only screen and (min-width:601px) and (max-width: 900px){
+@media screen and (min-width:601px) and (max-width: 900px){
 	#product .grid-container{
 		grid-template-columns: auto auto;
 		padding: 0px;		
@@ -103,7 +93,6 @@ galaxy s8/9/10
 	body{ padding: 5px; }
 	h1{ padding:10px; }
 }
-
 .product .price{
 	cursor: pointer;
 	color: burlywood;
@@ -115,15 +104,12 @@ galaxy s8/9/10
 	margin: 10px;
 	
 }
-
-.card{	
+.card{
 	box-shadow: 0 4px 8px 9 rgba(0, 0, 0, 0.2);
 	max-width: 300px;
 	margin: auto;
 	text-align: center;			
 }
-
-
 button{
 	font-family: 'Comfortaa', cursive;
 	font-size: 16px;
@@ -138,7 +124,6 @@ button{
 	border: 2px solid black;
 	outline: 0;	
 }
-
 .card button:hover{
 	cursor: pointer;
 	opacity: 0.7;
