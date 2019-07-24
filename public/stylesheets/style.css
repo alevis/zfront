@@ -1,14 +1,25 @@
- @import url('https://fonts.googleapis.com/css?family=Comfortaa|Lato|Roboto|Muli|Montserrat+Alternate&display=swap');
-body {
-	font: 14px 'Montserrat Alternate', 'Muli', 'Roboto', 'Lato', 'Arial', 'San Francisco', 'Avenir', sans-serif;  
-	padding:6%;
-	background: burlywood;
-	background: -webkit-linear-gradient(to top, #19547b, navajowhite);  
-	background: linear-gradient(to top, #883080, navajowhite);
+ @import url('https://fonts.googleapis.com/css?family=Comfortaa|Lato|Oswald|Muli|Montserrat+Alternate&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
+html,body{  
+  height: 100%;
+  margin: auto;
 }
+
+body {		
+	font: 14px 'Montserrat Alternate', 'Muli', 'Oswald', 'Lato', sans-serif;  
+  padding:6%;
+	background: burlywood;
+  background: -webkit-linear-gradient(to top, #9c2294, navajowhite);  
+  background: linear-gradient(to top,#da32ce, navajowhite);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 h1,h2{
 	text-align: center;
-	font-family:'Comfortaa', cursive;
+	/* font-family:'Comfortaa', cursive; */
+  font-family: 'Darker Grotesque', sans-serif;
 	font-weight:bolder;	
 }
 h1{	
@@ -17,114 +28,147 @@ h1{
 /* 	color: white; */
 	font-weight:bolder;
 }
-h2{			
-	padding: 2px;	
-	margin-left: 5px;
-	margin-right: 5px;
-	text-shadow: 1px 3px 5px burlywood;
-}
 main{	
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 }
+
 #products{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	padding: 50px;	
-	/*  background-color:burlywood; */
+	padding: 25px;	
+/*  	background-color:burlywood; 		 */
 	background: #ffd89b;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, white, blanchedalmond);  
+	background: -webkit-linear-gradient(to top, gray, blanchedalmond);  
 	background: linear-gradient(to top, pink, blanchedalmond);
 
 }
+
 #showcase{
-	background-color: blanchedalmond;
-	width: 100%;
-	padding: 20px;		
+	background-color: blanchedalmond;	
+	padding: 15px;		
 }
+
 #showcase img{
 	cursor: pointer;	
 	vertical-align: top;		
 	width: 100%;	
 }
+
 .grid-container{
 	display:grid;
-	grid-gap: 50px;
+	grid-gap: 25px;
 	grid-template-columns: auto auto auto;
 	align-content: center;	
 	justify-content: center;	
 }
+
 .grid-item{		
-	font-family: 'Lato' sans-serif;
+	font-family: 'Roboto' sans-serif;  
 	background-color: white;
-	padding: 10px;
+	/* padding: 7px; */
 	text-align: center;	
-	border-bottom: 5px solid black;	
+	border-bottom: 10px solid black;  
+  padding-bottom: 7px;
+}
+.grid-item h2{  
+ font-family: 'Oswald', sans-serif;
+	font-variant-caps:all-petite-caps;
+  font-size: 24px;
+	margin: 0px;
+  border-top: 1px solid black;
+	letter-spacing: 2px;
+	color:black;
+}
+.grid-item h2 span{
+	color: indianred;
 }
 .grid-item img{
 	cursor: pointer;
 	border-radius: 3px;	
 	width: 100%;
 }
+.grid-item .description{
+  padding: 7px;
+	margin: 2px;
+	text-align:left;
+	overflow-wrap: normal; 	
+}
+.product .price{
+	font-family: 'Comfortaa', cursive;
+	cursor: pointer;
+	color: chocolate;
+/* 	text-shadow: 1px 2px 1px black; */
+/* 	font-weight: bold; */
+	font-size: 23px;
+	margin:auto;
+	padding-top: 10px;
+	/* border: 2px solid black;	 */
+}
 /*
 iphone 6/78 +
 iphone x/xs +
 galaxy s8/9/10
 */
-@media screen and (max-width: 600px){
-	#products{	padding: 20px; }
-	#product .grid-container{
-		grid-template-columns: auto;
-		padding:0px;
+@media only screen and (max-width: 400px){
+	#products{
+		padding: 20px;
 	}
-	#product .grid-item{ padding: 0px; }
-	body{ padding: 5px; }
-	h1{ padding: 10px; }
+  #products .grid-container{
+		grid-template-columns: auto;
+		margin: auto;
+	}
+  .grid-item img{ 
+    height: 250px; 
+  }
+	body{ 
+    padding: 5px; 
+  }
+	h1{ 
+    padding: 10px; 
+  }
 }
-@media screen and (min-width:601px) and (max-width: 900px){
-	#product .grid-container{
+
+@media only screen and (min-width:401px) and (max-width: 900px){
+  #products{
+		padding: 20px;    
+	}
+  #products .grid-container{
 		grid-template-columns: auto auto;
 		padding: 0px;		
 	}
-	.grid-item{ padding: 0px; }
-	#products{ padding: 20px; }
-	body{ padding: 5px; }
-	h1{ padding:10px; }
+	.grid-item{
+		padding: 0px;
+	}
+  .grid-item h2{
+    font-weight: bolder;
+  }
+	body{
+		padding: 5px;
+	}
+	h1{
+		padding:10px;
+	}
 }
-.product .price{
-	cursor: pointer;
-	color: burlywood;
-	text-shadow: 1px 2px 1px black;
-	font-weight: bold;
-	font-size: 22px;
-	border: 2px solid black;
-	padding: 5px;		
-	margin: 10px;
-	
-}
-.card{
-	box-shadow: 0 4px 8px 9 rgba(0, 0, 0, 0.2);
-	max-width: 300px;
-	margin: auto;
-	text-align: center;			
-}
-button{
-	font-family: 'Comfortaa', cursive;
+button{	
+	font-family: 'Montserrat Alternate', sans-serif;
 	font-size: 16px;
 	font-weight: bolder;
 	color: white;
-	background-color:black;
+	background:black;
 	text-align: center;
 	cursor: pointer;
-	width: auto;
-	padding: 12px;
+	/* width: auto; */
+	padding: 10px;
 	margin: 10px;
 	border: 2px solid black;
-	outline: 0;	
+/* 	border-radius: 3px; */
 }
-.card button:hover{
+
+button:hover{
 	cursor: pointer;
-	opacity: 0.7;
+	color: black;
+  background:white;	
 }

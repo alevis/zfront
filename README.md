@@ -1,21 +1,23 @@
-# E-Commerce test app
+# E-Commerce Test App
 
-## running the app
+## Running The App
 `$ DEBUG=ecommerce:* npm start`
 
-## framework
-- nodejs
+## Framework
+- ejs
 
-## frontend
-- CSS
-- ejs for template engine
-- JS
+## Frontend
+- grunt-contrib-sass
+- grunt-postcss
+- autoprefixer
+- grunt-contrib-cssmin
+- grunt-contrib-uglify
+- grunt-contrib-watch
 
-## backend
-- postgresql [_x_]
-- amazon for storage [_x_]
+dev in src
+production in public 
 
-## deployment
+## Deployment
 - herokuapp
 - [ netlify ]
 - [ eleventy ]

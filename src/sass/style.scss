@@ -1,0 +1,21 @@
+@import 'base';
+$text-color: red;
+
+main{
+	max-width: $content-width;
+	margin: 0 auto;
+	color: $font-color;
+	display: flex;
+	h1{
+		font-size: $header-size;
+	}
+}
+
+body{
+	color: $text-color;
+	border: 2px solid orangered;
+}
+
+div{
+	padding: 5px;
+}
