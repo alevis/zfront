@@ -1,4 +1,6 @@
-# Zulubow frontend mockup
+# Zulubow frontend theme/style 3
+
+This is a blue themed version of zulubow's frontend
 
 ## Running The App
 `$ npm start`
