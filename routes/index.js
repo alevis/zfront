@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var mytitle = 'E-Commerce Test App'
+var mytitle = 'Zulubow'
 var products = [
   "/images/fashion.jpg",
-  "/images/images/fashion1.jpg",
+  "/images/fashion1.jpg",
   "/images/fashion2.jpg",
   "/images/fashion3.jpg",
   "/images/fashion4.jpg",

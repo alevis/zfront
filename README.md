@@ -1,10 +1,10 @@
-# E-Commerce Test App
+# Zulubow frontend mockup
 
 ## Running The App
-`$ DEBUG=ecommerce:* npm start`
+`$ npm start`
 
 ## Framework
-- ejs
+- expressjs
 
 ## Frontend
 - grunt-contrib-sass

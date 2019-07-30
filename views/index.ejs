@@ -1,39 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
 	<title><%= title %></title>
-	<meta name = "viewport" content = "width = device-width">
-    <link rel='stylesheet' href='/stylesheets/style.css' />    
-  </head>
+	<!-- meta tags -->
+	<meta name="viewport" content="width = device-width">
+	<meta name="description"
+		content="Zulubow is a modern apparel store with a traditional flair. We sell modern men and women's business suits and various clothing accessories; watches to rings.">
+	<meta name="keywords" content="zulubow, modern, suits, traditional, africa, women, men, apparel, accessories, ties">
+	<meta name="robots" content="index, follow">
+	<meta name="copyright" content="Zulubow @ 2019">
+	<meta name="language" content="EN">
+	<meta name="author" content="Levis">
+	<meta name="rating" content="general">
+	<meta name="generator" content="FreeMetaTagGenerator.com">
+	<!-- stylesheets -->
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<!-- body -->
 
-  <body>
-
-	<h1><%= title %></h1>
-
-	
-	<main>
-		<div id="showcase">
-			<img src="/images/fashion-standin.jpg">
+<body>
+	<nav>
+		<div class="logo">
+			<p><%= title %></p>
 		</div>
-		<!-- products -->
-		<div id="products">		
-			<div class="grid-container">
-				<% for(var i = 0; i < 9; i++) {%>
-				<div class="grid-item product">
-					<img src="/images/fashion1.jpg">
-					<h2><span>Winter</span> Coat</h2>
-					<p class="price">$19.99</p>
-					<p class="description">
-						Elegant orange and yellow summer dress.
-						Sleeveless, slim, elegant, and, superb.
-					</p>
-					<button>add to cart</button>
-				</div>
-				<% } %>
-				
-			</div> 
-		</div> 		<!-- products -->
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Apparel</a></li>
+			<li><a href="#">Accessories</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+		<div class="search">
+			<input type="text" for="search" name="search" placeholder="Search for items" />
+		</div>
+	</nav>
+	<main>
+		<div class="content">
+			<div id="showcase">
+				<img src="/images/fashion-standin.jpg">
+			</div>
+			<!-- products -->
+			<div id="products">
+				<div class="grid-container">
+					<% for(var i = 0; i < 9; i++) {%>
+					<div class="grid-item product">
+						<img src="/images/fashion5.jpg">
+						<h2><span>Summer</span> Dress</h2>
+						<p class="price">$19.99</p>
+						<p class="description">
+							Elegant orange and yellow summer dress.
+							Sleeveless, slim, elegant, and, superb.
+						</p>
+						<button>add to cart</button>
+					</div>
+					<% } %>
 
+				</div>
+			</div> <!-- products -->
+		</div> <!-- site content-->
 	</main>
-  </body>
+
+	<footer>
+		<div class="footer-left">
+			<h3>Zulubow<span> Apparel</span></h3>
+			<p class="footer-links">
+				<a href="#">Blog</a>
+				<a href="#">Pricing</a>
+				<a href="#">About</a>
+				<a href="#">Faq</a>
+				<a href="#">Contact</a>
+			</p>
+			<p class="footer-company-name">Zulubow &copy; 2019</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class>"A touch of tradition"</i>
+				<p><span>44 Forsyth St</span>Boston, USA</p>
+			</div>
+
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+1 444 233999</p>
+			</div>
+
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:support@company.com">info@zulubow.com</a></p>
+			</div>
+		</div>
+
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>About Zulubow</span>
+				Zulubow is a clothing/apparel store that caters to men, women and kids. 
+				Accessories include watches, men and women's jewlery, shoes and so much more.
+				&amp; so much more. Come check us out.
+			</p>
+
+			<div class="footer-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
 </html>

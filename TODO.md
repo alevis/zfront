@@ -1,0 +1,13 @@
+- Hamburger? menu
+- Search bar
+- Horizontal navbar
+- Horizontally scrollable grid-item images
+- horizontally autoscrolling showcase carousel.
+    - images with pink/purple/blanchealmond accents
+    - images with white/pink/blanchealmond background with black accents
+    - left and right borders for scrolling controls
+    - square dots to show what image is currently being displayed
+- professionally designed zulubow logo.
+    - a letter z in a circle
+    - capitalized z followed by ulubow
+    - colors for logo that go with pink/blanchealmond background
