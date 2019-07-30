@@ -40,9 +40,6 @@ nav .logo{
 	border-bottom: 1px solid rebeccapurple;	
 /* 	background: linear-gradient(to bottom, snow, transparent);		 */
 }
-nav .logo:hover{
-/* 	color: rebeccapurple;	 */
-}
 nav ul{	
 	font-family: "Roboto", sans-serif;
 	font-size:15px;
@@ -229,7 +226,7 @@ footer .footer-center i{
 	text-align: center;
 	line-height: 42px;
 	margin: 10px 0px;
-	vertical align: middle;
+	vertical-align: middle;
 }
 footer .footer-center i.fa-envelope{	
 	font-size: 17px;

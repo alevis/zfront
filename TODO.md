@@ -11,3 +11,9 @@
     - a letter z in a circle
     - capitalized z followed by ulubow
     - colors for logo that go with pink/blanchealmond background
+- footer
+- put logo/navbar/search in header div
+- make header div reasposive
+- change color-theme of footer (make it uniform)
+- create site logo
+- create login controls/options
