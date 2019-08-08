@@ -1,4 +1,4 @@
-# Zulubow frontend mockup
+# Zulubow frontend mockup - Main Theme
 
 ## Running The App
 `$ npm start`
