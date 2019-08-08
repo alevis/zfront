@@ -1,6 +1,6 @@
-# Zulubow frontend theme/style 3
+# Zulubow frontend - Yellow Theme
 
-This is a blue themed version of zulubow's frontend
+This is a yellow themed version of zulubow's frontend.
 
 ## Running The App
 `$ npm start`
