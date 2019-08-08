@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Oswald|Raleway|Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque|Playfair+Display&display=swap");
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+  padding: 10px 50px 10px;
+  text-align: center;
+  /* 	align-items: center; */
+  /* 	align-content: center; */
+  /* 	text-align: center; */
+}
+
+nav .logo {
+  font-size: 28px;
+  flex: 0;
+  font-weight: bold;
+  font-variant-caps: petite-caps;
+  color: black;
+  text-shadow: 2px 5px 3px burlywood;
+  padding: 15px;
+  /* 	background: linear-gradient(to bottom, snow, transparent);		 */
+}
+
+nav ul {
+  font-family: "Comfortaa", cursive;
+  font-size: 15px;
+  flex: 2;
+  width: 100%;
+}
+
+nav li {
+  color: black;
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+  margin-top: 10px;
+  /* 	border-bottom: 3px solid transparent;		 */
+  /* 	border:1px solid  rebeccapurple; */
+}
+
+nav li:hover {
+  cursor: pointer;
+  background: linear-gradient(to top, transparent, white);
+  /* 	border-bottom-right-radius: 10px; */
+  /* 	border-bottom-left-radius: 10px; */
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav input {
+  flex: 0;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 1em;
+}
+
+/*
+    Grid layout
+    Product layout on desktops and mobile phones.    
+*/
+.grid-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.grid-item {
+  /* font-family: 'Roboto' sans-serif;   */
+  background-color: white;
+  /* padding: 7px; */
+  text-align: center;
+  border-bottom: 10px solid black;
+  padding-bottom: 7px;
+}
+
+.grid-item h2 {
+  font-family: "Oswald", sans-serif;
+  font-variant-caps: all-petite-caps;
+  font-size: 24px;
+  margin: 0px;
+  border-top: 1px solid black;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.grid-item h2 span {
+  color: indianred;
+}
+
+.grid-item img {
+  cursor: pointer;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.grid-item .description {
+  padding: 7px;
+  margin: 2px;
+  /* text-align:center; */
+  overflow-wrap: normal;
+}
+
+.product .price {
+  font-family: "Comfortaa", cursive;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+  cursor: pointer;
+  color: gray;
+  /* color: chocolate; */
+  /* 	text-shadow: 1px 2px 1px black; */
+  font-size: 23px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+@media (max-width: 880px) {
+  footer {
+    font: bold 14px sans-serif;
+  }
+  footer .footer-left,
+  footer .footer-center,
+  footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  footer .footer-center i {
+    margin-left: 10;
+  }
+}
+
+/* iphone 6/78 + iphone x/xs + galaxy s8/9/10 */
+@media only screen and (max-width: 400px) {
+  #products {
+    padding: 20px;
+  }
+  #products .grid-container {
+    grid-template-columns: auto;
+    margin: auto;
+  }
+  .grid-item img {
+    height: 300px;
+  }
+  main {
+    padding: 5px;
+  }
+  h1 {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  #products {
+    padding: 20px;
+  }
+  #products .grid-container {
+    grid-template-columns: auto auto;
+    padding: 0px;
+  }
+  .grid-item {
+    padding: 0px;
+  }
+  .grid-item h2 {
+    font-weight: bolder;
+  }
+  main {
+    padding: 5px;
+  }
+  h1 {
+    padding: 10px;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: black;
+  /* background-color:#3d1e5b; */
+  /* 	background: linear-gradient(180deg, rebeccapurple, transparent); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  /* 	box-sizing: border-box; */
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .footer-left {
+  width: 30%;
+}
+
+footer h3 {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: snow;
+  margin: 0;
+}
+
+footer h3 span {
+  /* 	color: #5383d3; */
+  /* 	color: burlywood; */
+  color: orange;
+}
+
+footer .footer-links {
+  /* 	color: #ffffff; */
+  color: burlywood;
+  margin: 20px 0 12px;
+  padding: 10px;
+}
+
+footer .footer-links a {
+  color: lightpink;
+  display: block;
+  line-height: 1.8;
+  text-decoration: none;
+  align-items: center;
+}
+
+footer .footer-company-name {
+  /* 	color: #8f9296; */
+  color: aliceblue;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* center square */
+footer .footer-center {
+  width: 36%;
+}
+
+footer .footer-center i {
+  background-color: #33383b;
+  color: #debafc;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 0px;
+  vertical-align: middle;
+}
+
+footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+footer .footer-center p {
+  display: inline-block;
+  color: snow;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 2;
+}
+
+footer .footer-center p a {
+  /* 	color: #5383d3; */
+  color: orange;
+  text-decoration: none;
+}
+
+/* right square */
+footer .footer-right {
+  width: 30%;
+}
+
+footer .footer-company-about {
+  line-height: 21px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+footer .footer-company-about span {
+  display: block;
+  color: snow;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer .footer-icons {
+  margin-top: 25px;
+}
+
+footer .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.fa-facebook:hover {
+  color: #3c5a99;
+}
+
+.fa-twitter:hover {
+  color: #1dcaff;
+}
+
+.fa-linkedin:hover {
+  color: #0077B5;
+}
+
+.fa-github:hover {
+  color: orangered;
+}
+
+/* Royal blue themed version of zulubow frontend mockup site 
+Ccolors: - White  - Pink  - Gray/Silver  - Royal blue  */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, main {
+  font: 14px "Raleway", "Dosis", "Oswald", Times, sans-serif;
+  background: burlywood;
+  background: linear-gradient(to top, royalblue, pink);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  margin: 6%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(to top, rebeccapurple, white);
+}
+
+#showcase {
+  background-color: blanchedalmond;
+  padding: calc($nav-pad + 5px);
+}
+
+#showcase img {
+  cursor: pointer;
+  vertical-align: top;
+  width: 100%;
+}
+
+button {
+  font-family: "Montserrat Alternate", sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+  background: black;
+  text-align: center;
+  cursor: pointer;
+  /* width: auto; */
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  /* 	border-radius: 3px; */
+}
+
+button:hover {
+  cursor: pointer;
+  color: black;
+  background: white;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  color: white;
+  background-color: black;
+}

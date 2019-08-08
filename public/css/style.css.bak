@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Oswald|Raleway|Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Playfair+Display&display=swap');
 
-/*
-Royal blue themed version of zulubow frontend mockup site
-Ccolors:
- - White
- - Pink
- - Gray/Silver
- - Royal blue
- */
+/* Royal blue themed version of zulubow frontend mockup site 
+Ccolors: - White  - Pink  - Gray/Silver  - Royal blue  */
 
 html,
 body {
@@ -31,7 +25,7 @@ nav{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-  background: linear-gradient(to bottom, snow, transparent);		
+  	background: linear-gradient(to bottom, snow, transparent);		
 /* 	align-items: center; */
 /* 	align-content: center; */
 /* 	text-align: center; */		

@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title><%= title %></title>
 	<!-- meta tags -->
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width = device-width">
 	<meta name="description"
-		content="Zulubow is a modern apparel store with a traditional flair. We sell modern men and women's business suits and various clothing accessories; watches to rings.">
+	content="Zulubow is a modern apparel store with a traditional flair. We sell modern men and women's business suits and various clothing accessories; watches to rings.">
 	<meta name="keywords" content="zulubow, modern, suits, traditional, africa, women, men, apparel, accessories, ties">
 	<meta name="robots" content="index, follow">
 	<meta name="copyright" content="Zulubow @ 2019">
 	<meta name="language" content="EN">
 	<meta name="author" content="Levis">
-	<meta name="rating" content="general">
-	<meta name="generator" content="FreeMetaTagGenerator.com">
+	<meta name="rating" content="general">	
+	<title><%= title %></title>
 	<!-- stylesheets -->
-	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel='stylesheet' href='/css/style.min.css' />
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
 </head>
 <!-- body -->
-
 <body>
 	<nav>
 		<div class="logo">
@@ -46,7 +48,7 @@
 				<div class="grid-container">
 					<% for(var i = 0; i < 9; i++) {%>
 					<div class="grid-item product">
-						<img src="/images/fashion5.jpg">
+						<img src="/images/apparel/fashion5.jpg">
 						<h2><span>Summer</span> Dress</h2>
 						<p class="price">$19.99</p>
 						<p class="description">
@@ -56,7 +58,6 @@
 						<button>add to cart</button>
 					</div>
 					<% } %>
-
 				</div>
 			</div> <!-- products -->
 		</div> <!-- site content-->
@@ -72,7 +73,7 @@
 				<a href="#">Faq</a>
 				<a href="#">Contact</a>
 			</p>
-			<p class="footer-company-name">Zulubow &copy; 2019</p>
+			<!-- <p class="footer-company-name">Zulubow &copy; 2019</p> -->
 		</div>
 
 		<div class="footer-center">
@@ -109,7 +110,7 @@
 			</div>
 		</div>
 	</footer>
-
+<div class="copyright"> <p> Copyright Zulubow &copy; 2019 </p></div>
 </body>
 
 </html>

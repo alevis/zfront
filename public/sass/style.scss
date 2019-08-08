@@ -1,0 +1,69 @@
+@import "variables";
+@import "navigation";
+@import "layout";
+@import "footer";
+
+/* Royal blue themed version of zulubow frontend mockup site 
+Ccolors: - White  - Pink  - Gray/Silver  - Royal blue  */
+
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+
+body, main {
+	font: $body-font;
+	background: burlywood;	
+	background: linear-gradient(to top, royalblue, pink);
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+}
+main{
+    margin: $main-margin;
+}
+.content {	
+	display: flex;
+	flex-direction: column;
+	align-content: center;	
+}
+#products {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $prod-pad;
+	background: linear-gradient(to top, rebeccapurple, white);
+	// background: $prod-bg;
+}
+#showcase {
+	background-color: $balmond;
+	padding: calc($nav-pad + 5px); //15px;
+}
+#showcase img {
+	cursor: pointer;
+	vertical-align: top;
+	width: 100%;
+}
+button {
+	font-family: $button-font;
+	font-size: $button-sz;
+	font-weight: bolder;
+	color: white;	
+	background: black;
+	text-align: center;
+	cursor: pointer;
+	/* width: auto; */
+	padding: $button-pad;
+	margin: $button-pad;
+	border: 2px solid black;
+	/* 	border-radius: 3px; */
+}
+button:hover {
+	cursor: pointer;
+	color: black;
+	background: white;
+}
+.copyright{	
+	font-size: 14px;
+	font-weight: bolder;
+	text-align: center;
+	position: relative;
+	color: white;
+	background-color: black;	
+}

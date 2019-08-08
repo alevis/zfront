@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Oswald|Raleway|Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Playfair+Display&display=swap');
+// colors
+$balmond: blanchedalmond;
+$zulured: indianred;
+$zulurange: orange;
+$price-color: gray;
+$purple: #9c2294;
+$purple2: #da32ce;
+$facebook: #3c5a99;
+$twitter: #1dcaff;
+$linkedin: #0077B5 ;
+$github: orangered;
+// Typography
+$body-font: 14px 'Raleway', 'Dosis', 'Oswald', Times, sans-serif;
+$nav-ul-fnt: "Roboto", sans-serif;
+$price-font: 'Comfortaa', cursive;
+$button-font: 'Montserrat Alternate', sans-serif;
+$sub-font: 'Oswald', sans-serif;
+$letter-sp: 2px;
+// margins
+$main-margin: 6%;
+// backgrounds
+$nav-bg: linear-gradient(to bottom, snow, transparent);
+$nav-hvr: linear-gradient(to top,  transparent, white);
+$prod-bg: linear-gradient(to top, pink, blanchedalmond);
+// navigation
+$nav-pad: 10px;
+$nav-fnt-sz: 28px;
+$nav-color: black;
+$nav-txtshdw: 2px 5px 3px burlywood;
+$nav-bd-bm: 1px solid rebeccapurple;
+// products
+$prod-pad: 25px;
+$button-sz: 16px;
+$button-pad: 10px;
+//footer
+$footer-sz: 1.3em;
+$footer-margin: 80px;
+$footer-color: snow;
+$footer-center-bg: #33383b;
+$footer-center-color: rgb(222, 186, 252);
+$zulupink: lightpink;
+$zublue: aliceblue;
+$footer-pad: 55px 50px;
+$footer-font: bold 16px sans-serif;
+$footer-shdw: 0 1px 1px 0 rgba(0,0,0,0.12);

@@ -1,0 +1,109 @@
+/*
+    Grid layout
+    Product layout on desktops and mobile phones.    
+*/
+.grid-container {
+	display: grid;
+	grid-gap: $nav-pad + 5px; //25px;
+	grid-template-columns: auto auto auto;
+	align-content: center;
+	justify-content: center;
+}
+.grid-item {
+	/* font-family: 'Roboto' sans-serif;   */
+	background-color: white;
+	/* padding: 7px; */
+	text-align: center;
+	border-bottom: $nav-pad solid black;
+	padding-bottom: $nav-pad - 3px;
+}
+.grid-item h2 {
+	font-family: $sub-font;
+	font-variant-caps: all-petite-caps;
+	font-size: $nav-pad * 2 + 4px;
+	margin: 0px;
+	border-top: 1px solid black;
+	letter-spacing: $letter-sp;
+	color: black;
+}
+.grid-item h2 span {
+	color: $zulured;
+}
+.grid-item img {
+	cursor: pointer;
+	border-radius: $letter-sp + 1px;
+	width: 100%;
+}
+.grid-item .description {
+	padding: $nav-pad - 3px; //7px;
+	margin: $letter-sp;
+	/* text-align:center; */
+	overflow-wrap: normal;
+}
+.product .price {
+	font-family: $price-font;
+	/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+	cursor: pointer;
+	color: $price-color;
+	/* color: chocolate; */
+	/* 	text-shadow: 1px 2px 1px black; */	
+	font-size: $nav-fnt-sz - 5px;
+	margin: auto;
+	padding-top: $nav-pad;
+}
+@media(max-width: 880px){
+	footer{
+		font: bold 14px sans-serif;
+	}
+	footer .footer-left,
+	footer .footer-center,
+	footer .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	footer .footer-center i{
+		margin-left: 10;
+	}	
+}
+/* iphone 6/78 + iphone x/xs + galaxy s8/9/10 */
+@media only screen and (max-width: 400px) {
+	#products {
+		padding: 20px;
+	}
+	#products .grid-container {
+		grid-template-columns: auto;
+		margin: auto;
+	}
+	.grid-item img {
+		height: 300px;
+	}
+	main {
+		padding: 5px;
+	}
+	h1 {
+		padding: 10px;
+	}
+}
+@media only screen and (min-width:401px) and (max-width: 900px) {
+	#products {
+		padding: 20px;
+	}
+	#products .grid-container {
+		grid-template-columns: auto auto;
+		padding: 0px;
+	}
+	.grid-item {
+		padding: 0px;
+	}
+	.grid-item h2 {
+		font-weight: bolder;
+	}
+	main {
+		padding: 5px;
+	}
+	h1 {
+		padding: 10px;
+	}
+}
