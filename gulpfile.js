@@ -65,4 +65,4 @@ function watchFiles(done){
 }
 
 // Start serve before broserSync task
-exports.default = parallel( series(css, watchFiles), nmon, bsync );
+exports.default = series( series(css, watchFiles), nmon, bsync );
